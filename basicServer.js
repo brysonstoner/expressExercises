@@ -1,12 +1,20 @@
 var express = require("express");
 var app = express();
 
-app.get("/", (req, res)=> {
+app.get("/deth", (req, res)=> {
     res.sendfile('index.html');
 });
 
+app.get("/meth", (req, res)=> {
+    res.sendfile('meth.html');
+});
+
+app.get("/happy", (req, res)=> {
+    res.sendfile('happy.html');
+});
+
 app.listen(5000, function() {
-   console.log("Listening on 5000");
+   console.log("Listening on 8080");
 });
 
 //step 1: run "node basicServer.js" in a terminal while being in the 

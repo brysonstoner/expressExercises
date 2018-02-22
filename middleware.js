@@ -7,7 +7,7 @@ var scabbies = (req, res, next)=>{
   next();
 }
 
-app.use();
+app.use(scabbies);
 
 app.get("/", (req, res)=> {
     res.sendfile('index.html');
