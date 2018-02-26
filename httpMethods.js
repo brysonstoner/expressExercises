@@ -1,3 +1,7 @@
+var express = require("express");
+var app = express();
+var bodyParser = require("body-parser");
+
 var db = [{
     userName:"barfDude",
     password:"barfDudeRules123",
@@ -8,6 +12,8 @@ var db = [{
     password:"trouble1",
     email:"gobis@snobis.biz"
 }];
+
+
 
 //copy the boilerplate from reqRes.js
 //create some fake data (an array of object), set it equal to a const. 
